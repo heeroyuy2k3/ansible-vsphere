@@ -1,3 +1,6 @@
-- name: Unconditionally reboot the machine with all defaults
+- hosts: all  
 
-  ansible.builtin.reboot:
+  become: yes  
+
+  tasks:
+   - ping
