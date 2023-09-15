@@ -1,8 +1,8 @@
 - name: Create a virtual machine on given ESXi hostname
   community.vmware.vmware_guest:
-    hostname: "{{ vcenter_hostname }}"
-    username: "{{ vcenter_username }}"
-    password: "{{ vcenter_password }}"
+    hostname: localhost
+    username: admin
+    password: P@ssw0rd123
     folder: /DC1/vm/
     name: test_vm_0001
     state: poweredon
